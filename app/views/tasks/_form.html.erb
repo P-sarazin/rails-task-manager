@@ -1,0 +1,20 @@
+<%= simple_form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :completed %>
+  <%= f.input :completed, as: :boolean %>
+  <%= f.submit %>
+<% end %>
+
+<!-- <form class="new_task" id="new_task" action="/tasks" accept-charset="UTF-8" method="post">
+  <label for="task_title">Title</label>
+  <input type="text" name="task[title]" id="task_title">
+  <label for="task_details">Details</label>
+  <input type="text" name="task[details]" id="task_details">
+  <label for="task_completed">Completed</label>
+  <input type="boolean" name="task[completed]" id="task_completed">
+  <input type="submit" name="commit" value="Create Task" data-disable-with="Create task">
+</form>
+ -->
